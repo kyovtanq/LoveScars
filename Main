@@ -25,7 +25,7 @@ getgenv().AutoPrediction = false
     Tracer.Name = "Scar"	
     Tracer.Anchored = true		
     Tracer.CanCollide = false
-    Tracer.Transparency = 0.0
+    Tracer.Transparency = 0
     Tracer.Parent = game.Workspace	
     Tracer.Shape = _G.Types.Block
     Tracer.Size = Vector3.new(14,14,14)
@@ -43,7 +43,7 @@ circle.NumSides = 732
 circle.Radius = 120
 circle.Thickness = 0
 circle.Transparency = 0.0
-circle.Visible = true
+circle.Visible = false
 circle.Filled = false
 
 Runserv.RenderStepped:Connect(function()
@@ -91,7 +91,7 @@ end)
     end
     elseif not Locking then
          if getgenv().ChatMode then
-        local A_1 = "Unlocked!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+        local A_1 = "Unlocked" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
         	end	
         if getgenv().NotifMode then
                         game.StarterGui:SetCore("SendNotification", {
