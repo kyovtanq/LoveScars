@@ -25,7 +25,7 @@ getgenv().AutoPrediction = false
     Tracer.Name = "Scar"	
     Tracer.Anchored = true		
     Tracer.CanCollide = false
-    Tracer.Transparency = 0.8
+    Tracer.Transparency = 0.0
     Tracer.Parent = game.Workspace	
     Tracer.Shape = _G.Types.Block
     Tracer.Size = Vector3.new(14,14,14)
@@ -42,7 +42,7 @@ circle.Thickness = 0
 circle.NumSides = 732
 circle.Radius = 120
 circle.Thickness = 0
-circle.Transparency = 0.5
+circle.Transparency = 0.0
 circle.Visible = true
 circle.Filled = false
 
@@ -61,7 +61,7 @@ end)
                         game.StarterGui:SetCore("SendNotification", {
                    Title = "Valiant",
                    Text = "Already Loaded!",
-                   Duration = 5
+                   Duration = 1
         
                    })
         return
@@ -97,13 +97,13 @@ end)
                         game.StarterGui:SetCore("SendNotification", {
                    Title = "",
                    Text = "Unlocked",
-                   Duration = 5
+                   Duration = 1
                })
            elseif getgenv().Target == false then
                         game.StarterGui:SetCore("SendNotification", {
                    Title = "",
                    Text = "Target isn't enabled",
-                   Duration = 5
+                   Duration = 1
      
                    })
                
